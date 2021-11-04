@@ -1,0 +1,35 @@
+Crear un proyecto en laravel 8
+laravel new 'nombredeproyecto'
+
+Ejecutar migracion reseteando todas las migraciones
+php artisan migrate:fresh
+
+Ejecutar migración con seeder
+php artisan migrate:fresh --seed
+
+Crear modelo con todo lo necesario
+php artisan make:model 'nombre' -mfr --api
+
+Descargar laravel/ui
+composer require laravel/ui
+
+Generar scafolding de autenticación
+php artisan ui vue --auth
+
+Descargar las paqueterias del scafolding
+npm install
+
+Instalar vue-loader para corregir errores
+npm i vue-loader
+
+Desactivar notificacion del mix
+mix.disableSuccessNotifications();
+
+Compilar
+npm run dev
+
+Watcher
+npm run watch
+
+routes apiResources
+Route::apiResource('/articulos',App\Http\Controllers\ArticuloController::class);
